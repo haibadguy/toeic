@@ -1,0 +1,30 @@
+.quiz-page{max-width:760px}
+.quiz-card{background:#fff;border:1px solid #e5e5ed;border-radius:18px;box-shadow:0 20px 55px #36345a12;padding:34px 30px;text-align:center}
+.quiz-card small{letter-spacing:2px;font-weight:700;font-size:10px;color:#8e91a1}
+.quiz-card h1{font-size:44px;margin:18px 0 6px}
+.quiz-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}
+.quiz-option{display:flex;align-items:center;gap:10px;text-align:left;border:1px solid #dedfe8;background:#fff;border-radius:10px;padding:14px 16px;font-weight:600;transition:border-color .15s,background .15s,transform .15s}
+.quiz-option:hover:not(:disabled){border-color:#7a73e6;background:#f7f6ff;transform:translateY(-1px)}
+.quiz-option:disabled{cursor:default}
+.quiz-option kbd{font-size:10px;background:#f1f1f5;padding:3px 6px;border-radius:4px;color:#8b8ea0}
+.quiz-option.correct{border-color:#20a45c;background:#e8f8ee;color:#18834a}
+.quiz-option.wrong{border-color:#d9534f;background:#fdecec;color:#b03a37}
+.quiz-option.dimmed{opacity:.55}
+.quiz-feedback{margin-top:18px;font-weight:600;font-size:14px}
+.quiz-feedback.correct{color:#18834a}
+.quiz-feedback.wrong{color:#b03a37}
+.quiz-actions{display:flex;justify-content:space-between;align-items:center;margin-top:22px}
+.quiz-score{font-size:13px;color:#777b8d}
+.quiz-actions kbd{font-size:10px;background:#ffffff2e;padding:3px 5px;border-radius:4px;margin-left:8px}
+.quiz-note{font-size:12px;color:#9a9dab}
+.dark .quiz-card{background:#202130;border-color:#33364b}
+.dark .quiz-option{background:#292b3c;border-color:#41445c;color:#e8eaf2}
+.dark .quiz-option:hover:not(:disabled){background:#31334a}
+.dark .quiz-option.correct{background:#1c3a2a;border-color:#2f7d52;color:#7fe0a8}
+.dark .quiz-option.wrong{background:#3d2224;border-color:#8c3b3b;color:#f2a3a0}
+.dark .quiz-option kbd{background:#3a3d55;color:#c3c6d6}
+@media(max-width:760px){.quiz-options{grid-template-columns:1fr}
+.quiz-card h1{font-size:34px}
+.quiz-actions{flex-direction:column;gap:12px;align-items:stretch}
+.quiz-actions .primary-btn{width:100%}
+}

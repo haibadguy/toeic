@@ -1,0 +1,6 @@
+.term-with-voice{display:flex;align-items:center;justify-content:center;gap:14px}
+.term-with-voice h1{margin:24px 0}
+.voice-btn{border:1px solid #dedfea;background:#f7f7fc;border-radius:50%;width:44px;height:44px;display:grid;place-items:center;font-size:18px;transition:transform .15s,background .15s}
+.voice-btn:hover{background:#ecebff;transform:scale(1.08)}
+.voice-btn:active{transform:scale(.95)}
+.dark .voice-btn{background:#292b3c;border-color:#41445c}
